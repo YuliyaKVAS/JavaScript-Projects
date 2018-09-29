@@ -1,7 +1,7 @@
-function myMap(arr, foo){
-    var result = new Array();
-    arr.forEach(function(item){
-        result.push(foo(item));
+function myMap(arr, then){
+    let result = new Array();
+    arr.forEach(function(currentValue){
+        result.push(then(currentValue));
     });
 
     return result;
@@ -28,6 +28,10 @@ let users = [
     {
         name: 'Tom',
         surname: 'Smith'
+    },
+    {
+        name: 'Leo',
+        surname: 'Hamilton'
     }
 ];
 
